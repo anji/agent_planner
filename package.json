@@ -1,0 +1,32 @@
+{
+  "name": "agent-planner",
+  "version": "0.1.0",
+  "description": "Deterministic evidence planner compiling declarative goals and context into auditable execution graphs.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc -p tsconfig.check.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "evidence-planner",
+    "deterministic",
+    "audit",
+    "kleene-logic",
+    "idempotency",
+    "crypto-shredding"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  },
+  "dependencies": {
+    "canonicalize": "^2.0.0"
+  }
+}
